@@ -1,0 +1,19 @@
+.call-back {
+  position: fixed;
+  z-index: 3;
+  width: rem(82);
+  height: rem(82);
+  border: 8px solid $rose;
+  border-radius: 50%;
+  background: #fff;
+  right: rem(32);
+  bottom: rem(32);
+  svg {
+    width: rem(36);
+    height: rem(36);
+    position: absolute;
+    top: rem(16);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

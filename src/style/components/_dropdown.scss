@@ -1,0 +1,54 @@
+.dropdown {
+  position: relative;
+  font-weight: 500;
+}
+
+.dropdown__toggle {
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: rem(14);
+  line-height: 2.28;
+  font-weight: 500;
+  padding: rem(26 36 24 16);
+  position: relative;
+  // transition: background-color 250ms;
+  &:after {
+    content: '';
+    position: absolute;
+    right: rem(15);
+    top: 50%;
+    width: rem(12);
+    height: rem(8);
+    transform: translateY(-50%);
+    background: url('../img/chevron.svg') no-repeat;
+  }
+  &:hover, &:focus, &:active {
+    background-color: $gray-bg-color;
+    & + .dropdown__menu {
+      display: block;
+    }
+  }
+}
+
+.dropdown__menu {
+  display: none;
+  background: $gray-bg-color;
+  padding: rem(32) 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-bottom-right-radius: rem(12);
+  border-bottom-left-radius: rem(12);
+  min-width: rem(168);
+}
+
+.dropdown__item {
+  padding: 0 rem(36);
+  a {
+    display: block;
+    line-height: 1.7;
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+}

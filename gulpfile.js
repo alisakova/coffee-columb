@@ -49,7 +49,7 @@ var config = {
   tunnel: true,
   host: "localhost",
   port: 9000,
-  logPrefix: "Telepay",
+  logPrefix: "CoffeeColumb",
   fallback: "build/index.html"
 };
 
