@@ -1,0 +1,48 @@
+.header {
+  padding: {
+    top: rem(16);
+    bottom: rem(16);
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.14;
+}
+
+.header__left-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__contacts {
+  font-weight: 500;
+  font-size: rem(16);
+  a {
+    display: block;
+  }
+}
+
+.header__logo {
+  max-width: rem(54);
+  margin-right: rem(26);
+}
+
+.header__link {
+  text-transform: uppercase;
+  &_rose {
+    color: $rose;
+  }
+  margin-right: rem(17);
+}
+
+.header__btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: $rose;
+  padding: rem(4 8 4 2);
+  border-radius: rem(24);
+  font-size: rem(14);
+
+}
