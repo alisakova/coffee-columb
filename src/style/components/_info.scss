@@ -1,0 +1,133 @@
+.info {
+  padding: {
+    top: rem(96);
+    bottom: rem(96);
+  }
+  background: $darken-gray-bg-color;
+  .container {
+    max-width: rem(904);
+  }
+}
+
+.info__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__block {
+  width: 100%;
+  border-radius: rem(8);
+  padding: rem(32) rem(32) rem(24);
+  box-shadow: 0 rem(2 4) rgba(145, 161, 187, 0.100006);
+  background: #fff;
+  &_size_m {
+    max-width: rem(416);
+    margin-bottom: rem(32);
+    padding: 0;
+    &:first-child {
+      margin-right: rem(32);
+    }
+  }
+  &_flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+
+.info__content {
+  padding: rem(32) rem(32) rem(24);
+  min-height: rem(300);
+  p {
+    font-weight: 300;
+    font-size: rem(16);
+    line-height: 1.5;
+  }
+}
+
+.info__caption {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: rem(34);
+}
+
+.info__news-caption {
+  font-size: rem(18);
+  line-height: 1.33;
+  margin-bottom: rem(20);
+}
+
+.info__footer {
+  text-align: center;
+  border-top: 1px solid $border-color;
+  padding: {
+    top: rem(23);
+    bottom: rem(23);
+  }
+  a {
+    color: $rose;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover, &:active, &:focus {
+      color: darken($rose, 10%);
+    }
+  }
+}
+
+.info__articles-list {
+  font-weight: 300;
+  font-size: rem(16);
+  line-height: 1.5;
+  color: $gray-text-color;
+  li {
+    transition: color 250ms;
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+    &:last-child {
+      margin-bottom: rem(30);
+    }
+    &:hover, &:active, &:focus {
+      color: $blue;
+    }
+  }
+}
+
+.info__contacts {
+  color: $blue;
+  font-size: rem(16);
+  line-height: 1.5;
+  font-weight: 300;
+  padding: rem(32) rem(32) rem(55);
+  a {
+    &:hover, &:active, &:focus {
+      color: $gray-text-color;
+    }
+  }
+}
+
+.info__icon {
+  max-width: rem(20);
+  min-width: rem(20);
+  height: rem(20);
+  margin-right: rem(12);
+  svg {
+    display: block;
+    width: 100%;
+  }
+}
+
+.info__contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  &:not(:last-child) {
+    margin-bottom: rem(18);
+  }
+}
+
+.info__map {
+  max-width: rem(528);
+}
