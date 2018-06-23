@@ -20,3 +20,15 @@
   line-height: 1.6;
   margin-bottom: rem(52);
 }
+
+@media (max-width: 868px) {
+  .first-slide {
+    background-position-x: rem(-250);
+  }
+}
+
+@media (max-width: 540px) {
+  .first-slide {
+    background: $darken-gray-bg-color;
+  }
+}

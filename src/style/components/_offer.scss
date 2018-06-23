@@ -24,3 +24,17 @@
   margin-bottom: rem(62);
   max-width: rem(448);
 }
+
+@media (max-width: 540px) {
+  .offer__offer-text {
+    font-size: rem(32);
+    max-width: rem(300);
+  }
+}
+
+@media (max-width: 450px) {
+  .offer__container {
+    padding-left: rem(40);
+    background-position-x: rem(-120);
+  }
+}

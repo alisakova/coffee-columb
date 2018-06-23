@@ -11,7 +11,7 @@
 
 .features__container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-start;
 }
 
@@ -26,7 +26,6 @@
 }
 
 .features__icon {
-  max-width: rem(62);
   margin: 0 auto rem(32);
   img {
     margin: 0 auto;
@@ -44,4 +43,24 @@
   font-size: rem(16);
   line-height: 1.5;
   color: $gray-text-color;
+}
+
+@media (max-width: 540px) {
+  .features {
+    padding: rem(32) 0;
+  }
+  .features__container {
+    flex-wrap: wrap;
+  }
+  .features__item {
+    width: 100%;
+    margin-bottom: rem(24);
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+  .features__descr {
+    margin: 0 auto;
+    max-width: rem(250);
+  }
 }

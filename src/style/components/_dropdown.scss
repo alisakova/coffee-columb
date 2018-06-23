@@ -21,6 +21,7 @@
     height: rem(8);
     transform: translateY(-50%);
     background: url('../img/chevron.svg') no-repeat;
+    background-size: cover;
   }
   &:hover, &:focus, &:active {
     background-color: $gray-bg-color;

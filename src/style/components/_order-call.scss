@@ -9,3 +9,9 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 540px) {
+  .order-call {
+    padding: rem(60) 0;
+  }
+}

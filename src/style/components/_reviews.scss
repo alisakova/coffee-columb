@@ -5,3 +5,9 @@
   }
   background: $gray-bg-color;
 }
+
+@media (max-width: 540px) {
+  .reviews {
+    padding: rem(32) 0;
+  }
+}
