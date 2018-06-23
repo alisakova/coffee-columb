@@ -82,7 +82,7 @@ h2 {
 
 p {
 	font-size: rem(14);
-	line-height: 1.2;
+	line-height: 1.4;
 	text-align: left;
 	margin: 0;
 	color: $gray-text-color;
@@ -114,3 +114,5 @@ img {
 @import "components/service";
 @import "components/btn";
 @import "components/features";
+@import "components/reviews";
+@import "components/reviews-slider";

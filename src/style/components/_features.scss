@@ -28,6 +28,9 @@
 .features__icon {
   max-width: rem(62);
   margin: 0 auto rem(32);
+  img {
+    margin: 0 auto;
+  }
 }
 
 .features__item-caption {
