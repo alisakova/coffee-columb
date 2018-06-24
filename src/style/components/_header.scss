@@ -30,6 +30,7 @@
 
 .header__logo {
   max-width: rem(54);
+  min-width: rem(40);
   margin-right: rem(26);
 }
 
@@ -56,5 +57,27 @@
 }
 
 @media (max-width: 868px) {
-  
+  .header__contacts {
+    font-size: rem(14);
+  }
+  .header__el {
+    font-size: rem(12);
+  }
+}
+
+@media (max-width: 650px) {
+  .header__btn {
+    display: none;
+  }
+  .header__logo {
+    margin-right: 1rem;
+  }
+  .header__el {
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+  .header__contacts {
+    display: none;
+  }
 }

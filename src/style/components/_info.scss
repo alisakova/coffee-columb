@@ -31,7 +31,7 @@
   &_flex {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 0;
   }
 }
@@ -130,5 +130,32 @@
 
 .info__map {
   max-width: rem(528);
-  max-height: rem(368);
+  min-width: rem(528);
+  height: rem(368);
+}
+
+@media (max-width: 650px) {
+  .info__block_flex {
+    flex-direction: column;
+  }
+  .info__map {
+    max-width: none;
+    min-width: 0;
+  }
+  .info__block_size_m {
+    max-width: none;
+    width: 100%;
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+  .info__content {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .info {
+    padding: rem(32) 0;
+  }
 }

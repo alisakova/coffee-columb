@@ -18,3 +18,17 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 540px) {
+  .call-back {
+    width: rem(60);
+    height: rem(60);
+    border-width: 5px;
+    svg {
+      width: rem(30);
+      height: rem(30);
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

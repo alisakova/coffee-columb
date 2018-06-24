@@ -36,6 +36,7 @@
   background: $gray-bg-color;
   padding: rem(32) 0;
   position: absolute;
+  z-index: 4;
   top: 100%;
   right: 0;
   border-bottom-right-radius: rem(12);
@@ -51,5 +52,11 @@
   }
   &:not(:last-child) {
     margin-bottom: rem(10);
+  }
+}
+
+@media (max-width: 868px) {
+  .dropdown__toggle {
+    font-size: rem(12);
   }
 }

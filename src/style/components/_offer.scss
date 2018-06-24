@@ -26,6 +26,9 @@
 }
 
 @media (max-width: 540px) {
+  .offer {
+    padding: rem(32) 0;
+  }
   .offer__offer-text {
     font-size: rem(32);
     max-width: rem(300);
