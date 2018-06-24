@@ -15,6 +15,10 @@
       padding-bottom: rem(208);
     }
   }
+  &.food {
+    background: url("../img/food/first-slide-bg.png") no-repeat;
+    background-size: cover;
+  }
   .btn {
     font-weight: 300;
     box-shadow: 0 rem(2 4) rgba(145, 161, 187, 0.100006);
@@ -66,6 +70,14 @@
         padding-top: rem(200);
         padding-bottom: rem(300);
       }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .first-slide {
+    &.food {
+      background-position-x: rem(-150);
     }
   }
 }

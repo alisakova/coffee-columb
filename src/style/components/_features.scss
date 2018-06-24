@@ -7,6 +7,28 @@
   .container {
     max-width: rem(1016);
   }
+  &.food {
+    .container {
+      max-width: rem(1350);
+    }
+    .features__item {
+      cursor: pointer;
+      transition: border-color 250ms;
+      padding: {
+        left: rem(16);
+        right: rem(16);
+      }
+      &:hover, &:active, &:focus {
+        border-color: darken($border-color, 10%);
+      }
+    }
+    .features__item-caption {
+      margin-bottom: 0;
+    }
+    .features__icon {
+      min-height: rem(77);
+    }
+  }
 }
 
 .features__container {
