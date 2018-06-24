@@ -30,14 +30,14 @@ var path = {
     html: "src/*.html",
     js: "src/js/*.js",
     style: "src/style/main.scss",
-    img: "src/img/*.*"
+    img: ["src/img/*.*", "src/img/**/*.*"]
   },
   watch: {
     //За чем наблюдать
     html: "src/**/*.html",
     js: "src/js/*.js",
     style: "src/style/**/*.scss",
-    img: "src/img/**/*.*"
+    img: ["src/img/*.*", "src/img/**/*.*"]
   },
   clean: "./build"
 };
@@ -127,7 +127,7 @@ gulp.task("watch", function() {
   watch([path.watch.js], function(event, cb) {
     gulp.start("js:build");
   });
-  watch([path.watch.img], function(event, cb) {
+  watch(["src/img/*.*", "src/img/**/*.*"], function(event, cb) {
     gulp.start("image:build");
   });
 });
