@@ -1,48 +1,53 @@
 $(document).ready(function(){
-  $('.reviews-slider').slick({
-    infinite: true,
-    arrows: false,
-    // autoplay: true,
-    speed: 500,
-    centerPadding: '382px',
-    centerMode: true,
-    responsive: [
-      {
-        breakpoint: 1330,
-        settings: {
-          centerPadding: '250px'
+  if ($('.reviews-slider').length) {
+    $('.reviews-slider').slick({
+      infinite: true,
+      arrows: false,
+      // autoplay: true,
+      speed: 500,
+      centerPadding: '382px',
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 1330,
+          settings: {
+            centerPadding: '250px'
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            centerPadding: '150px'
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            centerPadding: '100px'
+          }
+        },
+        {
+          breakpoint: 660,
+          settings: {
+            centerMode: false,
+            centerPadding: '20px'
+          }
         }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          centerPadding: '150px'
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          centerPadding: '100px'
-        }
-      },
-      {
-        breakpoint: 660,
-        settings: {
-          centerMode: false,
-          centerPadding: '20px'
-        }
-      }
-    ]
-  });
+      ]
+    });
+  }
 });
 
 // $(window).on('resize orientationchange', function() {
 //   $('.reviews-slider').slick('reinit');
 // });
 
-$(window).resize(function() {
-  $('.reviews-slider').slick('resize');
-});
+if ($('.reviews-slider').length) {
+  $(window).resize(function() {
+    $('.reviews-slider').slick('resize');
+  });
+}
+
 
 var toTopBtn = document.querySelector(".btn-up");
 var scrollAnimation;
