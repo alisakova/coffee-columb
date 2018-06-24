@@ -28,7 +28,6 @@
   position: relative;
   margin-bottom: rem(32);
   &_reverse {
-    flex-direction: row-reverse;
     padding: {
       right: rem(80);
       left: rem(336);
@@ -65,5 +64,45 @@
     max-width: rem(277);
     top: rem(54);
     right: rem(30);
+  }
+}
+
+@media (max-width: 540px) {
+  .products {
+    padding: {
+      top: rem(32);
+      bottom: rem(32);
+    }
+    p {
+      font-size: rem(13);
+    }
+  }
+  .products__block {
+    padding-left: rem(32);
+    padding-right: rem(200);
+    padding-top: rem(30);
+    &_reverse {
+      padding-right: rem(32);
+      padding-left: rem(250);
+    }
+  }
+  .products__caption {
+    font-size: rem(24);
+  }
+  .products__img {
+    max-width: rem(300);
+    &_size_s {
+      max-width: rem(220);
+      right: 0;
+    }
+    &_size_m {
+      max-width: rem(220);
+    }
+    &_size_xs {
+      max-width: rem(220);
+      bottom: 0;
+      top: auto;
+      right: 0;
+    }
   }
 }

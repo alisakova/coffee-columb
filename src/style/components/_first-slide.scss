@@ -105,5 +105,8 @@
         padding-bottom: rem(96);
       }
     }
+    &.food {
+      background: $gray-bg-color;
+    }
   }
 }
