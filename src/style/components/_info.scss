@@ -152,6 +152,9 @@
   .info__content {
     min-height: 0;
   }
+  .info__caption {
+    font-size: rem(18);
+  }
 }
 
 @media (max-width: 540px) {

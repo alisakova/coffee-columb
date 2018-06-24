@@ -48,6 +48,11 @@
 @media (max-width: 540px) {
   .features {
     padding: rem(32) 0;
+    &.coffee {
+      .features__icon {
+        max-width: rem(65);
+      }
+    }
   }
   .features__container {
     flex-wrap: wrap;
