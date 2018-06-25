@@ -51,6 +51,15 @@ if ($('.reviews-slider').length) {
   });
 }
 
+// для плавного появления модалок
+
+$("a._call-btn").on("click", function(event) {
+  $(this).modal({
+    fadeDuration: 250,
+    fadeDelay: null
+  });
+  return false;
+});
 
 var toTopBtn = document.querySelector(".btn-up");
 var scrollAnimation;
