@@ -37,13 +37,17 @@
 }
 
 .articles-list__content {
-  padding: rem(32) rem(40) rem(32) rem(32);
-  flex-basis: 100%;
+  padding: rem(32) rem(40) rem(22) rem(32);
 }
 
 .articles-list__img {
   min-width: 48%;
   max-width: 48%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   // max-width: rem(416);
 }
 
@@ -78,4 +82,21 @@
   color: $gray-text-color;
   font-size: rem(14);
   line-height: 1.7;
+}
+
+@media (max-width: 540px) {
+  .articles-list {
+    padding: {
+      top: rem(32);
+      bottom: rem(32);
+    }
+  }
+  .articles-list__img {
+    max-width: none;
+    min-width: 0;
+    width: 100%;
+  }
+  .articles-list__item {
+    flex-direction: column;
+  }
 }

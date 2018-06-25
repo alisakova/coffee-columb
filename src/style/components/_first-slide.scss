@@ -137,5 +137,8 @@
         padding-bottom: rem(96);
       }
     }
+    &_small {
+      background: $gray-bg-color;
+    }
   }
 }
