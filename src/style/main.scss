@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'util';
+@import 'mixins';
 
 html {
 	height: 100%;
@@ -165,4 +166,6 @@ img {
 @import "components/accordion";
 @import "components/about-info";
 @import "components/contacts";
+@import "components/contact-form";
+@import "components/form";
 @import "components/footer";

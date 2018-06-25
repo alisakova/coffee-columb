@@ -1,0 +1,26 @@
+.contact-form {
+  padding: {
+    top: rem(96);
+    bottom: rem(96);
+  }
+  .container {
+    max-width: rem(456);
+  }
+  .btn {
+    font-weight: 300;
+    padding: rem(15) rem(35);
+    border-radius: rem(24);
+  }
+}
+
+@media (max-width: 540px) {
+  .contact-form {
+    padding: {
+      top: rem(32);
+      bottom: rem(32);
+    }
+    .container {
+      max-width: none;
+    }
+  }
+}
