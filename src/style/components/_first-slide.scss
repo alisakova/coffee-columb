@@ -35,12 +35,22 @@
   &_small {
     background: $gray-bg-color;
     text-align: center;
-    padding: rem(96) rem(20) rem(45);
+    padding: rem(96) rem(20);
     p {
       text-align: center;
     }
     h1 {
       margin-bottom: rem(18);
+    }
+    .first-slide__date,
+    .first-slide__descr {
+      margin-bottom: 0;
+    }
+  }
+  &_article {
+    .container {
+      max-width: rem(1352);
+      position: relative;
     }
   }
 }
@@ -50,7 +60,8 @@
   max-width: rem(528);
 }
 
-.first-slide__descr {
+.first-slide__descr,
+.first-slide__date {
   font-size: rem(20);
   line-height: 1.6;
   margin-bottom: rem(52);

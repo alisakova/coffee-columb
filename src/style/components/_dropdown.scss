@@ -1,6 +1,14 @@
 .dropdown {
   position: relative;
   font-weight: 500;
+  &:hover, &:focus, &:active {
+    & > .dropdown__toggle {
+      background-color: $gray-bg-color;
+    }
+    & > .dropdown__menu {
+      display: block;
+    }
+  }
 }
 
 .dropdown__toggle {
@@ -11,7 +19,6 @@
   font-weight: 500;
   padding: rem(26 36 24 16);
   position: relative;
-  // transition: background-color 250ms;
   &:after {
     content: '';
     position: absolute;
@@ -22,12 +29,6 @@
     transform: translateY(-50%);
     background: url('../img/chevron.svg') no-repeat;
     background-size: cover;
-  }
-  &:hover, &:focus, &:active {
-    background-color: $gray-bg-color;
-    & + .dropdown__menu {
-      display: block;
-    }
   }
 }
 
