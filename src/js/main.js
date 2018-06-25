@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.reviews-slider').slick({
       infinite: true,
       arrows: false,
-      // autoplay: true,
+      autoplay: true,
       speed: 500,
       centerPadding: '382px',
       centerMode: true,
@@ -35,6 +35,9 @@ $(document).ready(function(){
         }
       ]
     });
+  }
+  if ($('.news-slider').length) {
+    $('.news-slider').slick();
   }
 });
 

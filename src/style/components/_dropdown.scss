@@ -17,7 +17,7 @@
   font-size: rem(14);
   line-height: 2.28;
   font-weight: 500;
-  padding: rem(26 36 24 16);
+  padding: rem(26 36 26 16);
   position: relative;
   &:after {
     content: '';
@@ -46,18 +46,45 @@
 }
 
 .dropdown__item {
-  padding: 0 rem(36);
   a {
     display: block;
+    padding: 0 rem(36);
     line-height: 1.7;
+    &:hover, &:focus, &:active {
+      color: $gray-text-color;
+    }
   }
   &:not(:last-child) {
     margin-bottom: rem(10);
   }
 }
 
+.internal-page {
+  .dropdown {
+    &:hover, &:focus, &:active {
+      & > .dropdown__toggle {
+        background-color: $border-color;
+      }
+    }
+  }
+  .dropdown__menu {
+    background-color: $border-color;
+  }
+}
+
 @media (max-width: 868px) {
   .dropdown__toggle {
     font-size: rem(12);
+  }
+}
+
+@media (max-width: 540px) {
+  .dropdown__menu {
+    padding: rem(24) 0;
+  }
+  .dropdown__item {
+    a {
+      padding: 0 rem(24);
+    }
   }
 }
