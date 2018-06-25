@@ -26,6 +26,7 @@
   padding: rem(22) rem(32);
   position: relative;
   transition: all 250ms;
+  cursor: pointer;
   &:after {
     content: '';
     display: block;
