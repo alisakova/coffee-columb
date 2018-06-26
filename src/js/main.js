@@ -29,6 +29,7 @@ $(document).ready(function(){
         {
           breakpoint: 660,
           settings: {
+            autoplay: false,
             centerMode: false,
             adaptiveHeight: true,
             centerPadding: '20px'
