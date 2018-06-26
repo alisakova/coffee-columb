@@ -41,13 +41,10 @@
 .header__el {
   text-transform: uppercase;
   font-weight: 500;
+  display: block;
+  padding: 0;
   &_rose {
     color: $rose;
-    padding: {
-      top: rem(17);
-      bottom: rem(17);
-    }
-    line-height: 2.28;
     &:hover, &:active, &:focus {
       color: darken($rose, 10%);
     }
