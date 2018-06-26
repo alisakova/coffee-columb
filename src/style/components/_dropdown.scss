@@ -87,6 +87,12 @@
   .dropdown__menu {
     padding: rem(24) 0;
   }
+  .dropdown__toggle {
+    &:after {
+      width: rem(11);
+      height: rem(7);
+    }
+  }
   .dropdown__item {
     a {
       padding: 0 rem(24);
