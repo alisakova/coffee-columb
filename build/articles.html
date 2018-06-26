@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Статьи</title>
+  <meta name="viewport" content="width=device-width, height=device-height">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body class="internal-page">
+  <header class="header container">
+    <div class="header__left-col">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.svg" alt="Logo" />
+      </a>
+      <div class="header__contacts">
+        <a href="tel:+78125078521">+7 (812) 507-85-21</a>
+        <a href="mailto:info@spb1.coffee">info@spb1.coffee</a>
+      </div>
+    </div>
+    <div class="header__right-col">
+      <a href="coffee.html" class="header__el header__el_rose">Кофемашина за 0 рублей</a>
+      <div class="header__el dropdown">
+        <button class="dropdown__toggle">Услуги</button>
+        <ul class="dropdown__menu">
+          <li class="dropdown__item">
+            <a href="#">Услуга</a>
+          </li>
+          <li class="dropdown__item">
+            <a href="#">Услуга</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__el dropdown">
+        <button class="dropdown__toggle">Компания</button>
+        <ul class="dropdown__menu">
+          <li class="dropdown__item">
+            <a href="about.html">О компании</a>
+          </li>
+          <li class="dropdown__item">
+            <a href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__btn">
+        <a href="#call-modal" rel="modal:open" class="call-btn _call-btn">
+          <span class="call-btn__icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447716 0.447754 0 1 0H4.5C5.05225 0 5.5 0.447716 5.5 1C5.5 2.25 5.69995 3.45 6.07007 4.57C6.17993 4.92 6.1001 5.31 5.82007 5.57L3.62012 7.78C5.06006 10.62 7.37988 12.93 10.21 14.37L12.4099 12.17C12.6899 11.9 13.0801 11.82 13.4299 11.93C14.55 12.3 15.75 12.5 17 12.5C17.5522 12.5 18 12.9477 18 13.5V17C18 17.2652 17.8945 17.5196 17.707 17.7071C17.5195 17.8946 17.2651 18 17 18C7.61108 18 0 10.3888 0 1ZM16 6.5V8H10V2H11.5V5.5L17 0L18 1L12.5 6.5H16Z" fill="#F3084E"/>
+          </svg>
+        </span>
+          Заказать звонок
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div id="call-modal" class="modal call-modal">
+    <a href="#" rel="modal:close" class="modal-close">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.2988" d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#91A1BB" />
+      </svg>
+    </a>
+    <div class="call-modal__title">
+      Понравилось предложение?
+    </div>
+    <div class="call-modal__text">
+      Оставьте заявку сейчас и оператор перезвонит в течение 5–10 минут.
+    </div>
+    <form class="call-modal__form form">
+      <div class="form__item">
+        <input type="tel" placeholder="+ 7 (999) 888-77-66" class="form__input" required />
+        <button type="submit" class="call-modal__btn btn">
+          Отправить
+        </button>
+      </div>
+    </form>
+    <div class="call-modal__additional-text">
+      Нажимая кнопку «Отправить» вы соглашаетесь с Политикой конфиденциальности. Если вы не любите оставлять номер — позвоните нам: +7 (812) 507-85-21
+    </div>
+  </div>
+
+  <main>
+    <section class="first-slide first-slide_small">
+      <div class="container">
+        <h1>Статьи</h1>
+        <p class="first-slide__descr">Полезные знания и советы</p>
+      </div>
+    </section>
+
+    <section class="articles-list">
+      <div class="container">
+        <div class="articles-list__item">
+          <div class="articles-list__img">
+            <img src="img/articles/article-1.png" alt="Coffee machine" />
+          </div>
+          <div class="articles-list__info">
+            <div class="articles-list__content">
+              <h2>Кофемашина в офис</h2>
+              <div class="articles-list__subtitle">
+                Кофемашина в офис – оптимальный вариант для вашей компании.
+              </div>
+              <p class="articles-list__text">
+                Аренда профессиональной кофемашины на выгодных условиях – выгодное решение для офиса. Звоните и заказывайте!
+              </p>
+            </div>
+            <div class="articles-list__footer">
+              <span class="articles-list__date">20 марта, 2018</span>
+              <a href="article.html">Читать</a>
+            </div>
+          </div>
+        </div>
+        <div class="articles-list__item">
+          <div class="articles-list__img">
+            <img src="img/articles/article-2.png" alt="Coffee machine" />
+          </div>
+          <div class="articles-list__info">
+            <div class="articles-list__content">
+              <h2>Аренда кофемашины в офис — грамотное решение для вашей компании</h2>
+              <div class="articles-list__subtitle">
+                Аренда кофемашины в офис от компании CoffeeColumb
+              </div>
+              <p class="articles-list__text">
+                Кофе в офис с арендой кофемашины станет хорошим решением для вашего офиса. От вас требуется одно – подобрать тариф и позвонить нам!
+              </p>
+            </div>
+            <div class="articles-list__footer">
+              <span class="articles-list__date">20 марта, 2018</span>
+              <a href="article.html">Читать</a>
+            </div>
+          </div>
+        </div>
+        <div class="articles-list__item">
+          <div class="articles-list__img">
+            <img src="img/articles/article-1.png" alt="Coffee machine" />
+          </div>
+          <div class="articles-list__info">
+            <div class="articles-list__content">
+              <h2>Кофемашина в офис</h2>
+              <div class="articles-list__subtitle">
+                Кофемашина в офис – оптимальный вариант для вашей компании.
+              </div>
+              <p class="articles-list__text">
+                Аренда профессиональной кофемашины на выгодных условиях – выгодное решение для офиса. Звоните и заказывайте!
+              </p>
+            </div>
+            <div class="articles-list__footer">
+              <span class="articles-list__date">20 марта, 2018</span>
+              <a href="article.html">Читать</a>
+            </div>
+          </div>
+        </div>
+        <div class="articles-list__item">
+          <div class="articles-list__img">
+            <img src="img/articles/article-2.png" alt="Coffee machine" />
+          </div>
+          <div class="articles-list__info">
+            <div class="articles-list__content">
+              <h2>Аренда кофемашины в офис — грамотное решение для вашей компании</h2>
+              <div class="articles-list__subtitle">
+                Аренда кофемашины в офис от компании CoffeeColumb
+              </div>
+              <p class="articles-list__text">
+                Кофе в офис с арендой кофемашины станет хорошим решением для вашего офиса. От вас требуется одно – подобрать тариф и позвонить нам!
+              </p>
+            </div>
+            <div class="articles-list__footer">
+              <span class="articles-list__date">20 марта, 2018</span>
+              <a href="article.html">Читать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__col">
+          <div class="footer__caption">
+            Услуги
+          </div>
+          <ul class="footer__links-list">
+            <li>
+              <a href="coffee.html">Кофе в офис</a>
+            </li>
+            <li>
+              <a href="food.html">Напитки и закуски</a>
+            </li>
+            <li>
+              <a href="office.html">Канцелярия</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__caption">
+            Информация
+          </div>
+          <ul class="footer__links-list">
+            <li>
+              <a href="about.html">О компании</a>
+            </li>
+            <li>
+              <a href="contact.html">Обратная связь</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__caption">
+            Полезное
+          </div>
+          <ul class="footer__links-list">
+            <li>
+              <a href="articles.html">Статьи</a>
+            </li>
+            <li>
+              <a href="news.html">Новости</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__caption">
+            Контакты
+          </div>
+          <ul class="footer__links-list">
+            <li>
+              <a href="mailto:info@spb1.coffee">info@spb1.coffee</a>
+            </li>
+            <li>
+              <a href="tel:+78125078521">+7 (812) 507-85-21</a>
+            </li>
+            <li>
+              <ul class="footer__social-icons">
+                <li>
+                  <a href="#">
+                    <img src="img/vk.svg" alt="Vk icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/fb.svg" alt="Facebook icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/in.svg" alt="Instagram icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/tg.svg" alt="Telegram icon" />
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__additional">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__col">
+            ИНН&nbsp;471910345420
+            <br />ОГРНИП&nbsp;318470400019147
+          </div>
+          <div class="footer__col">
+            <div class="footer__logo">
+              <img src="img/logo-blue.svg" alt="Logo" />
+            </div>
+          </div>
+          <div class="footer__col">
+            <a href="#">Политика кофиденциальности</a>
+            <a href="#">Скачать шаблон договора</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
