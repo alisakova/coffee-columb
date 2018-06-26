@@ -75,6 +75,10 @@
 @media (max-width: 868px) {
   .dropdown__toggle {
     font-size: rem(12);
+    padding: {
+      top: rem(30);
+      bottom: rem(30);
+    }
   }
 }
 
