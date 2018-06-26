@@ -87,4 +87,14 @@
       padding: 0 rem(24);
     }
   }
+  .dropdown {
+    &:hover, &:focus, &:active {
+      & > .dropdown__toggle {
+        background-color: $border-color;
+      }
+    }
+  }
+  .dropdown__menu {
+    background-color: $border-color;
+  }
 }

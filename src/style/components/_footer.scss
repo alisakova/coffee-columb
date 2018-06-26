@@ -118,5 +118,8 @@
   }
   .footer__additional {
     font-size: rem(10);
+    .container {
+      padding: 0 rem(10);
+    }
   }
 }
