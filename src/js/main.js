@@ -30,6 +30,7 @@ $(document).ready(function(){
           breakpoint: 660,
           settings: {
             centerMode: false,
+            adaptiveHeight: true,
             centerPadding: '20px'
           }
         }
