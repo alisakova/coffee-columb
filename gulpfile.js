@@ -8,6 +8,7 @@ var gulp = require("gulp"),
   rigger = require("gulp-rigger"),
   uglify = require("gulp-uglify"),
   prefixer = require("gulp-autoprefixer"),
+  prettify = require("gulp-html-prettify"),
   cssmin = require("gulp-clean-css"),
   imagemin = require("gulp-imagemin"),
   pngquant = require("imagemin-pngquant"),
@@ -72,6 +73,7 @@ gulp.task("html:build", function() {
   gulp
     .src(path.src.html)
     .pipe(htmlImport("src/html/"))
+    .pipe(prettify({indent_char: ' ', indent_size: 2}))
     .pipe(rigger())
     .on("error", log)
     .pipe(gulp.dest(path.build.html))
@@ -82,6 +84,8 @@ gulp.task("html:build", function() {
 gulp.task("js:build", function() {
   gulp
     .src(path.src.js)
+    .pipe(uglify())
+    .on("error", log)
     .pipe(concat("main.min.js"))
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({ stream: true }));

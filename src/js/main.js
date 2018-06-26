@@ -41,17 +41,11 @@ $(document).ready(function(){
   }
 });
 
-// $(window).on('resize orientationchange', function() {
-//   $('.reviews-slider').slick('reinit');
-// });
-
 if ($('.reviews-slider').length) {
   $(window).resize(function() {
     $('.reviews-slider').slick('resize');
   });
 }
-
-// для плавного появления модалок
 
 $("a._call-btn").on("click", function(event) {
   $(this).modal({

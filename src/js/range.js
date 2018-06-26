@@ -1,6 +1,5 @@
-const $input = $('input[type=range]');
-const $output = $('#output');
-
+var $input = $('input[type=range]');
+var $output = $('#output');
 
 $(document).ready(function() {
   if ($input.length) {
