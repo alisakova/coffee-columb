@@ -111,3 +111,12 @@
     }
   }
 }
+
+@media (max-width: 540px) {
+  .footer__logo {
+    min-width: rem(30);
+  }
+  .footer__additional {
+    font-size: rem(10);
+  }
+}
