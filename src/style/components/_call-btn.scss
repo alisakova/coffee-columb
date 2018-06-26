@@ -22,3 +22,9 @@
   height: rem(40);
   margin-right: rem(16);
 }
+
+@media (max-width: 540px) {
+  .call-btn {
+    max-width: rem(230);
+  }
+}
