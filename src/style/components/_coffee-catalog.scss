@@ -19,7 +19,6 @@
 .coffee-catalog__caption {
   .section-name {
     margin-bottom: 0;
-    letter-spacing: 0.8px;
   }
   h2 {
     margin-bottom: rem(14);
@@ -33,6 +32,9 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: rem(-16);
+  & + .coffee-catalog__caption {
+    margin-top: rem(64);
+  }
 }
 
 .coffee-catalog__col {

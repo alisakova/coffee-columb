@@ -76,6 +76,11 @@
   }
 }
 
+.office-catalog__item-price {
+  min-width: rem(90);
+  text-align: right;
+}
+
 @media (max-width: 540px) {
   .office-catalog {
     padding: {
@@ -86,8 +91,8 @@
   .office-catalog__item-caption,
   .office-catalog__body-item-content {
     padding: {
-      left: rem(18);
-      right: rem(18);
+      left: rem(10);
+      right: rem(10);
     }
   }
   .office-catalog__item-caption {
@@ -97,9 +102,9 @@
   }
   .office-catalog__item-name,
   .office-catalog__item-price {
-    font-size: rem(13);
+    font-size: rem(11);
   }
   .office-catalog__item-name {
-    margin-right: rem(15);
+    margin-right: rem(24);
   }
 }
