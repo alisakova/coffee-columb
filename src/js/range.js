@@ -7,7 +7,6 @@ $(document).ready(function() {
   if ($input.length) {
     function updateOutput(value) {
       $output[0].textContent = value;
-      console.log($value);
       if (value >= 10) {
         $value[0].textContent = '~ 5 кг в месяц';
         $price[0].textContent = '7800 руб.'
