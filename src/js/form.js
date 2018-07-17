@@ -19,13 +19,12 @@ $(document).on("submit", "#request_form", function(event) {
     },
     dataType: "JSON",
     beforeSend: function() {
-      $("#request_form input,#request_form button").attr(
-        "disabled",
-        "disabled"
-      );
+      yaCounter49624201.reachGoal("ordersent");
+      ga("send", "ordersent", "order");
+      $("#request_form").attr("disabled", "disabled");
     },
     success: function(data) {
-      $("#request_form input,#request_form button").removeAttr("disabled");
+      $("#request_form").removeAttr("disabled");
       if (data && data.code == 200) {
         $("#request_form").slideUp();
         $("#response_data")
