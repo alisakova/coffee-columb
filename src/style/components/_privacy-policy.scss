@@ -31,3 +31,16 @@
   font-size: rem(18);
   padding: rem(45);
 }
+
+@media (max-width: 540px) {
+  .privacy-policy {
+    padding: rem(32) 0;
+    h1 {
+      font-size: rem(32);
+      margin-bottom: rem(32);
+    }
+  }
+  .privacy-policy__content {
+    padding: rem(16);
+  }
+}
