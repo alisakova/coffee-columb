@@ -81,3 +81,11 @@
   color: $gray-text-color;
   font-size: rem(12);
 }
+
+.call-modal__after-submit-text {
+  display: none;
+  color: #fff;
+  font-size: rem(18);
+  margin-bottom: rem(23);
+  padding: rem(12) 0;
+}

@@ -19,7 +19,16 @@ $(document).on("submit", "#request_form", function(event) {
     },
     dataType: "JSON",
     success: function(data) {
-      console.log(data);
+      if (data && data.code == 200) {
+        $("#request_form").slideUp();
+        $("#response_data")
+          .slideDown()
+          .text(data.message);
+      } else if (data && data.code != 200) {
+        $("#response_data")
+          .slideDown()
+          .text(data.message);
+      }
     }
   });
 
