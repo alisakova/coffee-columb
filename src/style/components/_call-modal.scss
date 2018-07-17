@@ -1,5 +1,6 @@
 .jquery-modal {
   &.blocker {
+    z-index: 100;
     background: rgba(246, 247, 250, 0.9);
   }
 }
