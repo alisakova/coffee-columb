@@ -102,7 +102,7 @@
 
     <section class="contact-form">
       <div class="container">
-        <form class="contact-form__form form">
+        <form id="contact_form" class="contact-form__form form">
           <div class="form__item">
             <label for="name" class="form__label">Имя</label>
             <input type="text" id="name" name="name" class="form__input" placeholder="Иван Иванов" required />
@@ -113,12 +113,15 @@
           </div>
           <div class="form__item">
             <label for="message" class="form__label">Вопрос</label>
-            <textarea class="form__textarea" name="message" required></textarea>
+            <textarea id="question" class="form__textarea" name="message" required></textarea>
           </div>
           <button type="submit" class="btn btn_blue">
             Отправить
           </button>
         </form>
+        <div id="response" class="contact-form__anwser">
+
+        </div>
       </div>
     </section>
 

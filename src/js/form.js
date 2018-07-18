@@ -42,6 +42,36 @@ $(document).on("submit", "#request_form", function(event) {
   return false;
 });
 
+$(document).on("submit", "#contact_form", function(event) {
+  $.ajax({
+    type: "POST",
+    url: "/request",
+    data: {
+      name: $("#name").val(),
+      phone: $("#tel").val(),
+      question: $("#question").val(),
+      utm_source: getParameterByName("utm_source"),
+      utm_term: getParameterByName("utm_term")
+    },
+    dataType: "JSON",
+    beforeSend: function() {
+      yaCounter49624201.reachGoal("ordersent");
+      ga("send", "ordersent", "order");
+      $("#contact_form").attr("disabled", "disabled");
+    },
+    success: function(data) {
+      $("#contact_form").removeAttr("disabled");
+      if (data) {
+        $("#response").text(data.message);
+        $("#response").slideDown();
+      }
+    }
+  });
+
+  event.preventDefault();
+  return false;
+});
+
 $("body").ready(function() {
   $("#request_form input").bind("change keyup input click", function() {
     if (this.value.match(/[^0-9+]/g)) {

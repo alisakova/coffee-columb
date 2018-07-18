@@ -5,6 +5,7 @@
   }
   .container {
     max-width: rem(456);
+    position: relative;
   }
   .btn {
     font-weight: 300;
@@ -13,14 +14,26 @@
   }
 }
 
+.contact-form__anwser {
+  display: none;
+  font-size: rem(18);
+  margin-top: rem(24);
+  position: absolute;
+  left: rem(20);
+  bottom: rem(-40);
+}
+
 @media (max-width: 540px) {
   .contact-form {
     padding: {
-      top: rem(32);
-      bottom: rem(32);
+      top: rem(46);
+      bottom: rem(46);
     }
     .container {
       max-width: none;
     }
+  }
+  .contact-form__anwser {
+    bottom: rem(-35);
   }
 }
