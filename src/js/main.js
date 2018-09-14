@@ -41,6 +41,9 @@ $(document).ready(function(){
   if ($('.news-slider').length) {
     $('.news-slider').slick();
   }
+  if ($('.coffee-machine-slider').length) {
+    $('.coffee-machine-slider').slick();
+  }
 });
 
 if ($('.reviews-slider').length) {

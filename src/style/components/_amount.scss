@@ -7,6 +7,9 @@
   .container {
     max-width: rem(904);
   }
+  &_alt-bg {
+    background: $border-color;
+  }
 }
 
 .amount__container {
