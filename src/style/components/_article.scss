@@ -24,6 +24,12 @@
   }
 }
 
+.article__text {
+  .bold {
+    font-weight: 500;
+  }
+}
+
 .article__main-img {
   margin-bottom: rem(96);
   max-width: 100%;
