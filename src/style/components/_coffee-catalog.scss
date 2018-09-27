@@ -40,6 +40,12 @@
 .coffee-catalog__col {
   width: 33.333%;
   padding: rem(16);
+  &:nth-child(3n) {
+    .coffee-descr {
+      right: 50%;
+      left: auto;
+    }
+  }
 }
 
 .coffee-catalog__item {
@@ -78,6 +84,18 @@
 .coffee-catalog__img {
   max-width: rem(264);
   margin: 0 auto rem(20);
+}
+
+.coffee-catalog__block {
+  position: relative;
+  @media (min-width: 768px) {
+    cursor: pointer;
+    &:hover {
+      .coffee-descr {
+        display: block;
+      }
+    }
+  }
 }
 
 .coffee-catalog__footer {
