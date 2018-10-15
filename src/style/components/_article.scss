@@ -21,6 +21,9 @@
     line-height: 1;
     text-align: left;
     letter-spacing: -1px;
+    @media (max-width: 540px) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -42,6 +45,13 @@
   max-width: rem(304);
   min-width: rem(304);
   margin-right: rem(32);
+  &_no-max-width {
+    max-width: none;
+    margin: {
+      right: 0;
+      bottom: rem(32);
+    }
+  }
 }
 
 .article__paragraph {
@@ -55,6 +65,9 @@
     justify-content: flex-start;
     align-items: stretch;
     margin-bottom: rem(75);
+    &_column {
+      flex-direction: column;
+    }
   }
 }
 
