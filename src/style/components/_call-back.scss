@@ -7,7 +7,7 @@
   border-radius: 50%;
   background: #fff;
   right: rem(80);
-  bottom: rem(20);
+  bottom: 20px;
   cursor: pointer;
   svg {
     width: rem(36);
@@ -19,10 +19,23 @@
   }
 }
 
+@media (max-width: 1080px) {
+  .call-back {
+    right: 20px;
+    bottom: 90px;
+    width: 50px;
+    height: 50px;
+    svg {
+      width: rem(30);
+      height: rem(30);
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 @media (max-width: 540px) {
   .call-back {
-    width: rem(60);
-    height: rem(60);
     border-width: 5px;
     svg {
       width: rem(30);
