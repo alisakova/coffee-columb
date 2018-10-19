@@ -84,3 +84,5 @@ if (toTopBtn) {
     } else clearTimeout(scrollAnimation);
   }
 }
+
+VK.Widgets.CommunityMessages("vk_community_messages", 86720983, {tooltipButtonText: "Есть вопрос?", buttonType: 'blue_circle'});
