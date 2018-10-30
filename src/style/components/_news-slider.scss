@@ -41,7 +41,7 @@
   position: absolute;
   cursor: pointer;
   transition: border-color 250ms;
-  &:hover, &:active, &:focus {
+  &:hover {
     border-color: $gray-text-color;
   }
 }
