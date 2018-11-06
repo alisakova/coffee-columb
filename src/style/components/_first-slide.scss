@@ -1,5 +1,5 @@
 .first-slide {
-  background: url("../img/index/first-slide-bg.png") no-repeat;
+  background: url("../img/index/first-slide-bg.jpg") no-repeat;
   background-size: cover;
   .container {
     max-width: rem(1126);
@@ -18,7 +18,7 @@
     }
   }
   &.food {
-    background: url("../img/food/first-slide-bg.png") no-repeat;
+    background: url("../img/food/first-slide-bg.jpg") no-repeat;
     background-size: cover;
   }
   &.office {
