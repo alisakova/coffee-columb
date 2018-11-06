@@ -24,7 +24,6 @@ var path = {
     js: "build/js/",
     css: "build/css/",
     img: "build/img/",
-    fonts: "build/fonts/",
     files: "build/files/"
   },
   src: {
