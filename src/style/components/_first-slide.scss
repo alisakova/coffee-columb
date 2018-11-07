@@ -93,6 +93,11 @@
       background-position-x: rem(-150);
     }
   }
+  .first-slide {
+    &.office {
+      background-position-x: rem(-150);
+    }
+  }
 }
 
 @media (max-width: 992px) {
