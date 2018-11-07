@@ -24,6 +24,7 @@
   &.office {
     background: url("../img/office/first-slide-bg.jpg") no-repeat;
     background-size: cover;
+    background-position: right;
     .first-slide__content {
       padding-bottom: rem(175);
     }
@@ -90,11 +91,6 @@
   .first-slide {
     &.food {
       background-position-x: rem(-150);
-    }
-  }
-  .first-slide {
-    &.office {
-      background-position-x: rem(-200);
     }
   }
 }
